@@ -1,0 +1,18 @@
+v18 used resnet34 backbone, lr 1e-3, seed 23498, test frac 0.2, hinge loss, all channels, div2000
+v20 used resnet34 backbone, lr 1e-3, seed 534653, test frac 0.2, bce loss, all channels, div2000
+v23 used efficientnet-b0 backbone, lr 1e-3, seed 534653, test frac 0.1, dice loss, 3 visible channels, LogTransform
+v24 same as 23 but filtered dataset
+v39 same as 24 but more filtered dataset, lr 2e-4, seed 45544, all channels, dicebce loss
+v40 train v39 from best to do SWA
+v44 same as v39 but focal loss and SWA
+
+Note the efficientnet looked better at initiation - less network artefacts
+
+## Didn't work
+- cutting down channels
+- changing threshold away from 0.5
+- focal loss
+- bce loss
+
+## did work
+- SWA gave small boost on score on board

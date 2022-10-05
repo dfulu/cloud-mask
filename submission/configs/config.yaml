@@ -1,0 +1,6 @@
+---
+ root_directory: "/codeexecution"
+ local_test: false
+ batch_size: 10
+ num_workers: 4
+ gpu: 0

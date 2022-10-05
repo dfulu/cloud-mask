@@ -1,0 +1,4 @@
+
+ reduction: "mean" # [mean, min, max, median, trim_mean-#, trim_mean-0.#, *.joblib]
+ augmentation: 0 # [0, 1, 2, 4]
+ threshold: 0.50

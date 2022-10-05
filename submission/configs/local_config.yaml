@@ -1,0 +1,7 @@
+---
+ root_directory: "/home/s1205782/Datastore/Projects/cloudmask/data/submission_test"
+ local_test: true
+ test_all: false
+ batch_size: 4
+ num_workers: 4
+ gpu: 0
